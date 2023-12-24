@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Teruntuk Kekasihku Tercinta ❤</title>
+  </head>
+  <body>
+    <div class="card bg-love">
+      <img id="thumb" src="image2.png" alt="thumb" class="img-thumb" />
+      <h1 class="latin text-center">Teruntuk Kekasihku Tercinta ❤ <br>
+        Ai Nurrohiah ❣
+      </h1>
+      <h2 class="text-center"></h2>
+      <div class="card-footer">
+        <div class="btn mau" onclick="mau()">Iya ❤</div>
+        <div class="btn gak" onclick="gakmau(this)" onmouseover="gakmau(this)">Gak ☹️</div>
+      </div>
+      <div class="info text-center mt-16" id="info"></div>
+    </div>
+    <div class="text-center mt-16" id="musicbox">
+      <audio id="music" src="music.mp3" controls></audio>
+    </div>
+  </body>
+  <script>
+    var _info = document.getElementById("info");
+    var _music = document.getElementById("music");
+    function gakmau(element) {
+      element.style.position = "absolute";
+      element.style.left = `${Math.floor(Math.random() * 90)}%`;
+      element.style.top = `${Math.floor(Math.random() * 90)}%`;
+
+      _info.innerHTML = "Harus Mau Pokoknya ya 😝";
+    }
+    function mau() {
+      if (_music.paused) _music.play();
+      _info.innerHTML = "Teruntuk kekasihku tercinta Kamu adalah keberuntungan terbesar dalam hidupku, membuat segala sesuatu terasa lebih berarti dan penuh makna. Bersamamu, aku merasa sangat beruntung dan bersyukur. Terima kasih, sayang 💕, karena telah menjadi bagian dari hidupku dan membuat setiap hari terasa istimewa. Aku tak bisa berhenti berpikir betapa beruntungnya aku memilikimu 😘 Aku ingin meminta maaf , karena aku tahu masih banyak kekurangan dalam diriku. Meskipun begitu, aku selalu berusaha menjadi yang terbaik versi apa adanya diriku, terutama untukmu, satu-satunya cinta dalam hidupku. Terimakasih, karena bersamamu, aku merasa mampu menjadi lebih baik setiap harinya. Semoga langkah-langkah ini membawa kita menuju kebahagiaan yang tak terhingga bersama... I Love You Sayang ❤..Lagu ini buat kamu ya 😊.";
+    }
+  </script>
+</html>
